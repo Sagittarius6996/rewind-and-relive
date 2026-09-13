@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coil — Watch Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Coil home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>coil<span class="brand-dot">.</span></span>
+      </a>
+
+      <div class="workspace-switcher">
+        <div class="workspace-avatar">M</div>
+        <div>
+          <span class="eyebrow">Workspace</span>
+          <strong>Midnight club</strong>
+        </div>
+        <span class="chevron">⌄</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <span class="nav-label">Your space</span>
+        <a class="nav-item active" href="#"><span class="nav-icon">◉</span> The lounge <span class="live-pill">LIVE</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon">▦</span> My gallery</a>
+        <a class="nav-item" href="#"><span class="nav-icon">♡</span> Saved moments</a>
+
+        <span class="nav-label nav-label-spaced">Rooms</span>
+        <a class="nav-item" href="#"><span class="room-dot lime"></span> Sunday reset</a>
+        <a class="nav-item" href="#"><span class="room-dot violet"></span> Kyoto dump</a>
+        <a class="nav-item" href="#"><span class="room-dot orange"></span> Road trip '24</a>
+        <a class="new-room" href="#"><span>＋</span> Create a room</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="profile-row">
+          <div class="avatar avatar-you">Y</div>
+          <div><strong>You</strong><span class="online-status"><i></i> Online</span></div>
+          <span class="more">•••</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Rooms</span><b>/</b><strong>The lounge</strong></div>
+        <div class="top-actions">
+          <button class="icon-button" aria-label="Search">⌕</button>
+          <button class="share-button">Share room <span>↗</span></button>
+          <button class="avatar avatar-small">AK</button>
+        </div>
+      </header>
+
+      <section class="room-heading">
+        <div>
+          <div class="live-heading"><span></span> LIVE ROOM</div>
+          <h1>Late night, same place.</h1>
+          <p>Drop a memory. Stay a while.</p>
+        </div>
+        <div class="room-meta">
+          <div class="participant-stack"><span class="avatar mini a1">R</span><span class="avatar mini a2">J</span><span class="avatar mini a3">S</span><span class="avatar mini a4">+4</span></div>
+          <span>7 friends here</span>
+        </div>
+      </section>
+
+      <section class="stage-grid">
+        <div class="player-card">
+          <div class="player-art">
+            <div class="snake-orbit orbit-one"></div>
+            <div class="snake-orbit orbit-two"></div>
+            <div class="art-copy"><span class="art-kicker">NOW PLAYING</span><strong>MEMORIES<br>IN MOTION</strong><small>your shared visual diary</small></div>
+            <div class="player-topline"><span class="content-type">✦ Photo story</span><span>01:24:08</span></div>
+            <button class="play-button" aria-label="Play"><span>▶</span></button>
+            <div class="player-bottom">
+              <span class="timecode">04:18 <i>/</i> 12:46</span>
+              <div class="progress"><span></span></div>
+              <div class="player-controls"><span>◀</span><span>▮▮</span><span>▶</span><span class="volume">◖</span><span class="expand">⛶</span></div>
+            </div>
+          </div>
+          <div class="player-caption"><div><h2>Summer fragments — Vol. 03</h2><p>Added by <span>you</span> · 12 photos</p></div><button class="caption-action">•••</button></div>
+        </div>
+
+        <details class="chat-card collapsible-panel" open>
+          <summary class="panel-header"><div><span class="panel-kicker">ROOM CHAT</span><h2>Say something</h2></div><span class="chat-count">8</span></summary>
+          <div class="chat-messages">
+            <div class="message"><span class="avatar mini msg-avatar coral">R</span><div><div class="message-meta"><strong>Rhea</strong><span>now</span></div><p>this one is such a vibe ✨</p></div></div>
+            <div class="message"><span class="avatar mini msg-avatar blue">J</span><div><div class="message-meta"><strong>Jules</strong><span>1m</span></div><p>wait, where was this?</p></div></div>
+            <div class="message reply"><span class="avatar mini msg-avatar lime-avatar">S</span><div><div class="message-meta"><strong>Sam</strong><span>1m</span></div><p>the little cafe in Shimokitazawa!</p></div></div>
+            <div class="message"><span class="avatar mini msg-avatar lavender">A</span><div><div class="message-meta"><strong>Aria</strong><span>2m</span></div><p>adding this to my saved moments</p></div></div>
+          </div>
+          <div class="chat-input"><span>Write a message...</span><button>↑</button></div>
+        </details>
+      </section>
+
+      <section class="lower-grid">
+        <details class="gallery-section collapsible-panel" open>
+          <summary class="section-heading"><div><span class="panel-kicker">SHARED LIBRARY</span><h2>From the gallery</h2></div><button class="album-launcher" type="button">Switch album <span>⌄</span></button></summary>
+          <div class="album-tabs" role="tablist" aria-label="Gallery albums">
+            <button class="album-tab active" type="button" data-album="summer">Summer fragments</button>
+            <button class="album-tab" type="button" data-album="kyoto">Kyoto dump</button>
+            <button class="album-tab" type="button" data-album="road">Road trip '24</button>
+          </div>
+          <div class="gallery-grid">
+            <article class="photo-card photo-one"><div class="photo-overlay"><span>Tokyo, JP</span><strong>08.12.24</strong></div></article>
+            <article class="photo-card photo-two"><div class="photo-overlay"><span>Golden hour</span><strong>08.15.24</strong></div></article>
+            <article class="photo-card photo-three"><div class="photo-overlay"><span>On the road</span><strong>08.18.24</strong></div></article>
+            <article class="photo-card photo-four"><div class="photo-overlay"><span>Little things</span><strong>08.21.24</strong></div></article>
+          </div>
+        </details>
+        <div class="side-panels">
+          <div class="people-panel"><div class="section-heading compact"><div><span class="panel-kicker">IN THE ROOM</span><h2>Friends</h2></div><span class="count-label">7 active</span></div><div class="friend-list"><div><span class="avatar mini a1">R</span><span>Rhea</span><i class="mic-on">⌁</i></div><div><span class="avatar mini a2">J</span><span>Jules</span><i class="mic-off">⌁</i></div><div><span class="avatar mini a3">S</span><span>Sam</span><i class="mic-on">⌁</i></div><button class="invite-button">＋ Invite someone</button></div></div>
+          <div class="call-controls"><button class="control active">⌁<small>Mute</small></button><button class="control active">▣<small>Camera</small></button><button class="control">◉<small>Share screen</small></button><button class="control end">⏻<small>Leave</small></button></div>
+          <div class="mode-placeholders">
+            <div class="mode-placeholder"><span class="mode-icon">◉</span><div><strong>Voice room</strong><small>Spatial audio is coming soon</small></div><span class="coming-soon">SOON</span></div>
+            <div class="mode-placeholder"><span class="mode-icon">▤</span><div><strong>Screen share</strong><small>Present a tab to everyone</small></div><span class="coming-soon">SOON</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="album-modal" id="albumModal" role="dialog" aria-modal="true" aria-labelledby="albumModalTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close album picker" data-close-modal>×</button>
+      <span class="panel-kicker">YOUR ALBUMS</span>
+      <h2 id="albumModalTitle">Choose a shared memory</h2>
+      <p>Switch the room’s visual story without leaving the lounge.</p>
+      <div class="modal-albums">
+        <button type="button" data-album="summer"><span class="album-swatch swatch-summer"></span><span><strong>Summer fragments</strong><small>12 memories · 2024</small></span><b>→</b></button>
+        <button type="button" data-album="kyoto"><span class="album-swatch swatch-kyoto"></span><span><strong>Kyoto dump</strong><small>28 memories · 2024</small></span><b>→</b></button>
+        <button type="button" data-album="road"><span class="album-swatch swatch-road"></span><span><strong>Road trip '24</strong><small>19 memories · 2024</small></span><b>→</b></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.querySelector('#albumModal');
+    const launcher = document.querySelector('.album-launcher');
+    const tabs = document.querySelectorAll('.album-tab');
+    const albumButtons = document.querySelectorAll('[data-album]');
+    const openModal = () => { modal.hidden = false; document.body.classList.add('modal-open'); };
+    const closeModal = () => { modal.hidden = true; document.body.classList.remove('modal-open'); };
+    launcher.addEventListener('click', (event) => { event.preventDefault(); openModal(); });
+    document.querySelectorAll('[data-close-modal]').forEach((el) => el.addEventListener('click', closeModal));
+    albumButtons.forEach((button) => button.addEventListener('click', () => {
+      const album = button.dataset.album;
+      tabs.forEach((tab) => tab.classList.toggle('active', tab.dataset.album === album));
+      document.querySelector('.player-caption h2').textContent = button.querySelector('strong')?.textContent || button.textContent.trim();
+      closeModal();
+    }));
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeModal(); });
+
+  </script>
+</body>
+</html>
