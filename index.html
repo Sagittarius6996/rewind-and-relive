@@ -115,7 +115,7 @@
           </div>
         </details>
         <div class="side-panels">
-          <div class="people-panel"><div class="section-heading compact"><div><span class="panel-kicker">IN THE ROOM</span><h2>Friends</h2></div><span class="count-label">7 active</span></div><div class="friend-list"><div><span class="avatar mini a1">R</span><span>Rhea</span><i class="mic-on">⌁</i></div><div><span class="avatar mini a2">J</span><span>Jules</span><i class="mic-off">⌁</i></div><div><span class="avatar mini a3">S</span><span>Sam</span><i class="mic-on">⌁</i></div><button class="invite-button">＋ Invite someone</button></div></div>
+          <div class="people-panel"><div class="section-heading compact"><div><span class="panel-kicker">IN THE ROOM</span><h2>Friends</h2></div><span class="count-label">7 active</span></div><div class="friend-list"></div><button class="invite-button">＋ Invite someone</button></div>
           <div class="call-controls"><button class="control active">⌁<small>Mute</small></button><button class="control active">▣<small>Camera</small></button><button class="control">◉<small>Share screen</small></button><button class="control end">⏻<small>Leave</small></button></div>
           <div class="mode-placeholders">
             <div class="mode-placeholder"><span class="mode-icon">◉</span><div><strong>Voice room</strong><small>Spatial audio is coming soon</small></div><span class="coming-soon">SOON</span></div>
@@ -141,23 +141,6 @@
     </div>
   </div>
 
-  <script>
-    const modal = document.querySelector('#albumModal');
-    const launcher = document.querySelector('.album-launcher');
-    const tabs = document.querySelectorAll('.album-tab');
-    const albumButtons = document.querySelectorAll('[data-album]');
-    const openModal = () => { modal.hidden = false; document.body.classList.add('modal-open'); };
-    const closeModal = () => { modal.hidden = true; document.body.classList.remove('modal-open'); };
-    launcher.addEventListener('click', (event) => { event.preventDefault(); openModal(); });
-    document.querySelectorAll('[data-close-modal]').forEach((el) => el.addEventListener('click', closeModal));
-    albumButtons.forEach((button) => button.addEventListener('click', () => {
-      const album = button.dataset.album;
-      tabs.forEach((tab) => tab.classList.toggle('active', tab.dataset.album === album));
-      document.querySelector('.player-caption h2').textContent = button.querySelector('strong')?.textContent || button.textContent.trim();
-      closeModal();
-    }));
-    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeModal(); });
 
-  </script>
 </body>
 </html>
